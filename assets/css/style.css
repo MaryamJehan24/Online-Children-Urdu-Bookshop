@@ -1,0 +1,116 @@
+/* Main styles that are common across all pages */
+body {
+    font-family: 'Jameel Noori Nastaleeq', 'Noto Nastaliq Urdu', serif;
+    direction: rtl;
+    background-color: #F7FFF7;
+    color: #292F36;
+}
+
+/* Navbar styles */
+.navbar {
+    background-color: #FF6B6B !important;
+    padding: 10px 0;
+}
+
+.navbar-brand img {
+    height: 50px;
+}
+
+.nav-link {
+    font-size: 1.1rem;
+    margin-left: 15px;
+}
+
+/* Button styles */
+.btn-primary {
+    background-color: #FF6B6B;
+    border-color: #FF6B6B;
+}
+
+.btn-primary:hover {
+    background-color: #ff5252;
+    border-color: #ff5252;
+}
+
+.btn-accent {
+    background-color: #FFE66D;
+    border-color: #FFE66D;
+    color: #292F36;
+}
+
+.btn-accent:hover {
+    background-color: #ffdc40;
+    border-color: #ffdc40;
+    color: #292F36;
+}
+
+/* Book card styles */
+.book-card {
+    transition: transform 0.3s;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    background-color: white;
+}
+
+.book-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.book-img {
+    height: 200px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.book-title {
+    font-weight: bold;
+    margin-top: 10px;
+    color: #292F36;
+}
+
+.book-author {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.book-price {
+    color: #FF6B6B;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+/* Footer styles */
+.footer {
+    background-color: #292F36;
+    color: white;
+    padding: 30px 0;
+    margin-top: 50px;
+}
+
+.footer a {
+    color: #FFE66D;
+}
+
+.footer a:hover {
+    color: #FF6B6B;
+    text-decoration: none;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .navbar-nav {
+        margin-top: 15px;
+    }
+    
+    .nav-link {
+        margin-left: 0;
+        padding: 10px 15px;
+    }
+    
+    .book-card {
+        margin-bottom: 30px;
+    }
+}
